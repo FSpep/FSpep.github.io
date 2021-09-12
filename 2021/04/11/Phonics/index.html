@@ -672,7 +672,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://FSpep.github.io/2021/04/11/Phonics/">https://FSpep.github.io/2021/04/11/Phonics/</a>
+                    <a href="https://mc.fsp2021.tk/2021/04/11/Phonics/">https://mc.fsp2021.tk/2021/04/11/Phonics/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -733,33 +733,33 @@
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
 
-    
-        <link rel="stylesheet" href="/libs/gitment/gitment-default.css">
-<link rel="stylesheet" href="/css/gitment.css">
-
-<div class="gitment-card card" data-aos="fade-up">
+<div class="card gitalk-card" data-aos="fade-up">
     <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; padding-left: 20px; top: 15px; padding-bottom: 5px;">
         <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
         <span>评论</span>
     </div>
-    <div id="gitment-content" class="card-content"></div>
+    <div id="gitalk-container" class="card-content"></div>
 </div>
 
-<script src="/libs/gitment/gitment.js"></script>
+<script src="/libs/gitalk/gitalk.min.js"></script>
 <script>
-var gitment = new Gitment({
-    id: 'Sun Apr 11 2021 13:51:11 GMT+0800',
-    owner: 'Fspep',
-    repo: 'Pinglun233',
-    oauth: {
-        client_id: 'c231b0dcaeb95e4d7e15',
-        client_secret: '75e2315964867256ec89da7020720e82c7ce092e'
-    }
-});
+    let gitalk = new Gitalk({
+        clientID: 'c231b0dcaeb95e4d7e15',
+        clientSecret: '75e2315964867256ec89da7020720e82c7ce092e',
+        repo: 'Pinglun233',
+        owner: 'Fspep',
+        admin: ["fspep"],
+        id: '2021-04-11T13-51-11',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
 
-gitment.render('gitment-content');
+    gitalk.render('gitalk-container');
 </script>
+
+    
 
     
 
